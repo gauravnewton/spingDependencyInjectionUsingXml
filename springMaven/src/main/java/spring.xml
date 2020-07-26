@@ -3,5 +3,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="aliean" class="com.techreloded.springMaven.Aliean"></bean>
+	<bean id="aliean" class="com.techreloded.springMaven.Aliean" scope="prototype"></bean>
+	
+<!-- 	NOTE THAT scop is singelton by default and one object is created by default by spring in case of singleton wheather you request for bean or not
+	but when scope is set to prototype then object of bean is created only when you request the objet using getBean() method --> 
 </beans>
