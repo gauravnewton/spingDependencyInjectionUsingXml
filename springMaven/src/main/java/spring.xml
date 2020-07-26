@@ -3,5 +3,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="aliean" class="com.techreloded.springMaven.Aliean"></bean>
+	<bean id="aliean" class="com.techreloded.springMaven.Aliean">
+		<property name="age" value="10"></property>
+		<property name="laptop" ref="laptop"></property>
+	</bean>
+	
+	<bean id="laptop" class="com.techreloded.springMaven.Laptop"></bean>
 </beans>
+
