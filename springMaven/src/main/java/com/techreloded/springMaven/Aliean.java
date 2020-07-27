@@ -6,6 +6,14 @@ public class Aliean {
 	
 	private Laptop laptop;
 	
+	/*
+	 * public Aliean(){ System.out.println("Aliean created......"); }
+	 */
+	
+	public Aliean(int age) {
+		this.age = age;
+	}
+
 	public Laptop getLaptop() {
 		return laptop;
 	}
@@ -15,15 +23,10 @@ public class Aliean {
 		this.laptop = laptop;
 	}
 
-
-	public Aliean(){
-		System.out.println("Aliean created......");
-	}
-	
-	
 	public int getAge() {
 		return age;
 	}
+	
 	public void setAge(int age) {
 		System.out.println("Age set");
 		this.age = age;
