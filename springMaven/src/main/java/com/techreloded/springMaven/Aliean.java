@@ -4,24 +4,15 @@ public class Aliean {
 	
 	private int age;
 	
-	private Laptop laptop;
+	private Computer computer;
 	
-	/*
-	 * public Aliean(){ System.out.println("Aliean created......"); }
-	 */
+	public Aliean() {
+		System.out.println("Aliean created......");
+	}
 	
-	public Aliean(int age) {
-		this.age = age;
-	}
+	
 
-	public Laptop getLaptop() {
-		return laptop;
-	}
-
-
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
-	}
+	
 
 	public int getAge() {
 		return age;
@@ -34,6 +25,18 @@ public class Aliean {
 	
 	public void code() {
 		System.out.println("I'm codeing...");
-		laptop.compile();
+		computer.compile();
+	}
+
+
+
+	public Computer getComputer() {
+		return computer;
+	}
+
+
+
+	public void setComputer(Computer computer) {
+		this.computer = computer;
 	}
 }
